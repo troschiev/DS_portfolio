@@ -84,14 +84,14 @@
   </tr>
 <tr>
     <td><a href=
-"https://nbviewer.org/github/troschiev/DS_portfolio/blob/main/Personal_Data_Encoding/Personal_Data_Encoding.ipynb"
+"https://github.com/troschiev/DS_portfolio/blob/main/Personal_Data_Encoding/Personal_Data_Encoding.ipynb"
 >Защита персональных данных клиентов</a><br>Я.Практикум</td>
     <td>Линейная алгебра, линейная регрессия</td>
     <td>python, pandas, numpy, seaborn, sklearn</td>
   </tr>
 <tr>
     <td><a href=
-"https://nbviewer.org/github/troschiev/DS_portfolio/blob/main/Cell_Tarif_Classification/Cell_Tarif_Classification.ipynb"
+"https://github.com/troschiev/DS_portfolio/blob/main/Cell_Tarif_Classification/Cell_Tarif_Classification.ipynb"
 >Рекомендация тарифа клиенту мобильного оператора</a><br>Я.Практикум</td>
     <td>Классические модели машинного обучения: логистичесая регрессия с инжинирингом признаков, SVM, наивный байесовский классфикатор, решающие деревья, случайный лес, градиентный бустинг, стекинг моделей</td>
     <td>python, pandas, sklearn, numpy, seaborn, xgboost</td>
