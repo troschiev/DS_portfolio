@@ -1,3 +1,7 @@
+# Внимание!
+
+В ноутбуке много визуализаций, поэтому он не всегда открыватеся на GitHub. Прошу смотреть по [ссылке](https://nbviewer.org/github/troschiev/DS_portfolio/blob/main/Semantic_Segmentation_Skin_Lesions/Semantic_Segmentation_Skin_Lesions.ipynb).
+
 # Сегментация изображений дефектов кожи
 
 Цель:

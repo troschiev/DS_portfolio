@@ -21,9 +21,9 @@
   </tr>
   <tr>
     <td><a href=
-"https://github.com/troschiev/DS_portfolio/blob/main/Semantic_Segmentation_Skin_Lesions/Semantic_Segmentation_Skin_Lesions.ipynb"
->Сегментация изображений дефектов кожи</a><br>DL school МФТИ</td>
-    <td>Сверточные нейронные сети, ручная реализация Unet и Segnet (на базе предобученной VGG16), аугментация изображений, custom loss functions</td>
+"https://nbviewer.org/github/troschiev/DS_portfolio/blob/main/Semantic_Segmentation_Skin_Lesions/Semantic_Segmentation_Skin_Lesions.ipynb"
+>Сегментация изображений дефектов кожи</a><br>(внешняя ссылка)<br>DL school МФТИ</td>
+    <td>Сверточные нейронные сети, ручная реализация Unet и SegNet (на базе предобученной VGG16), аугментация изображений, custom loss functions</td>
     <td>python, pytorch, sklearn, albumentations, matplotlib</td>
   </tr>
   <tr>
@@ -81,6 +81,20 @@
 >Анализ рынка видеоигр</a><br>(внешняя ссылка)<br>Я.Практикум</td>
     <td>Глубокий анализ данных, продвинутая визуализация, проверка гипотез</td>
     <td>python, pandas, numpy, seaborn, plotly, scipy</td>
+  </tr>
+<tr>
+    <td><a href=
+"https://nbviewer.org/github/troschiev/DS_portfolio/blob/main/Personal_Data_Encoding/Personal_Data_Encoding.ipynb"
+>Защита персональных данных клиентов</a><br>Я.Практикум</td>
+    <td>Линейная алгебра, линейная регрессия</td>
+    <td>python, pandas, numpy, seaborn, sklearn</td>
+  </tr>
+<tr>
+    <td><a href=
+"https://nbviewer.org/github/troschiev/DS_portfolio/blob/main/Cell_Tarif_Classification/Cell_Tarif_Classification.ipynb"
+>Рекомендация тарифа клиенту мобильного оператора</a><br>Я.Практикум</td>
+    <td>Классические модели машинного обучения: логистичесая регрессия с инжинирингом признаков, SVM, наивный байесовский классфикатор, решающие деревья, случайный лес, градиентный бустинг, стекинг моделей</td>
+    <td>python, pandas, sklearn, numpy, seaborn, xgboost</td>
   </tr>
 </table>
 
