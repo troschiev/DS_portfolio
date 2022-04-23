@@ -22,7 +22,7 @@
   <tr>
     <td><a href=
 "https://github.com/troschiev/DS_portfolio/tree/main/Semantic_Segmentation_Skin_Lesions"
->Сегментация изображений дефектов кожи</a><br>(внешняя ссылка)<br>DL school МФТИ</td>
+>Сегментация изображений дефектов кожи</a><br>DL school МФТИ</td>
     <td>Сверточные нейронные сети, ручная реализация Unet и SegNet (на базе предобученной VGG16), аугментация изображений, custom loss functions</td>
     <td>python, pytorch, sklearn, albumentations, matplotlib</td>
   </tr>
@@ -78,7 +78,7 @@
 <tr>
     <td><a href=
 "https://github.com/troschiev/DS_portfolio/tree/main/Video_Games_Market_Analysis"
->Анализ рынка видеоигр</a><br>(внешняя ссылка)<br>Я.Практикум</td>
+>Анализ рынка видеоигр</a><br>Я.Практикум</td>
     <td>Глубокий анализ данных, продвинутая визуализация, проверка гипотез</td>
     <td>python, pandas, numpy, seaborn, plotly, scipy</td>
   </tr>
