@@ -21,6 +21,14 @@
   </tr>
   <tr>
     <td><a href=
+"https://github.com/troschiev/DS_portfolio/tree/main/BERT_Text_Classifiaction"
+>Идентификация токсичных комментариев</a><br>Я.Практикум</td>
+    <td>Очитка текста, TF-IDF, лемматизация, word2vec, fine-tuned BERT, взвешенная функция потерь</td>
+    <td>python, pandas, numpy, pytorch, BERT, sklearn, optuna, matplotlib, seaborn, wordcloud, nltk, enchant, spacy, gensim</td>
+  </tr>
+  <tr>
+  <tr>
+    <td><a href=
 "https://github.com/troschiev/DS_portfolio/tree/main/Semantic_Segmentation_Skin_Lesions"
 >Сегментация изображений дефектов кожи</a><br>DL school МФТИ</td>
     <td>Сверточные нейронные сети, ручная реализация Unet и SegNet (на базе предобученной VGG16), аугментация изображений, custom loss functions</td>
