@@ -19,6 +19,13 @@
     <th>Методы</th>
     <th>Технологии</th>
   </tr>
+<tr>
+    <td><a href=
+"https://github.com/troschiev/DS_portfolio/tree/main/Age_Regression_Photo"
+>Определение возраста человека по фотографи</a><br>Я.Практикум</td>
+    <td>EffecientNet V2 pretrained, сильная аугментация, анализ ошибок</td>
+    <td>python, pytorch, matplotlib, albumentations, timm, альтернативный код в keras</td>
+  </tr>
   <tr>
     <td><a href=
 "https://github.com/troschiev/DS_portfolio/tree/main/Image_Autoencoders"
