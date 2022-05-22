@@ -21,9 +21,16 @@
   </tr>
   <tr>
     <td><a href=
+"https://github.com/troschiev/DS_portfolio/tree/main/Image_Autoencoders"
+>Автоэнкодеры изображений</a><br>DL school МФТИ</td>
+    <td>Сверточные нейронные сети, латентные векторы, сэмплирование из латентного пространства, вариационный автоэнкодер, Conditional VAE, лосс на основе KL divergence</td>
+    <td>python, pytorch, sklearn, matplotlib</td>
+  </tr>
+<tr>
+    <td><a href=
 "https://github.com/troschiev/DS_portfolio/tree/main/BERT_Text_Classifiaction"
 >Идентификация токсичных комментариев</a><br>Я.Практикум</td>
-    <td>Очитка текста, TF-IDF, лемматизация, word2vec, fine-tuned BERT, взвешенная функция потерь</td>
+    <td>Очистка текста, TF-IDF, лемматизация, word2vec, fine-tuned BERT, взвешенная функция потерь</td>
     <td>python, pandas, numpy, pytorch, BERT, sklearn, optuna, matplotlib, seaborn, wordcloud, nltk, enchant, spacy, gensim</td>
   </tr>
   <tr>
