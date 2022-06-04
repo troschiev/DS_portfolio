@@ -19,6 +19,16 @@
     <th>Методы</th>
     <th>Технологии</th>
   </tr>
+
+<tr>
+    <td><a href=
+"https://github.com/troschiev/DS_portfolio/tree/main/DCGAN_Faces"
+>DCGAN для генерации лиц</a><br>DL school МФТИ</td>
+    <td>DCGAN вручную, кастомные слои гауссовского шума, gradien penalty, регуляризация за счет работы с лейблами (soft, noise, flip), 
+специфические метрики: Fréchet inception distance и Leave-one-out-1-NN классификация, анимация по эпохам</td>
+    <td>python, pytorch, matplotlib, albumentations, timm</td>
+  </tr>
+
 <tr>
     <td><a href=
 "https://github.com/troschiev/DS_portfolio/tree/main/Age_Regression_Photo"
