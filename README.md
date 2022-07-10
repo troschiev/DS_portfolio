@@ -132,4 +132,4 @@
 
 # Контакты
 
-Связаться со мной можно по почте [sergey.troschiev@gmail.com](mailto:sergey.troschiev@gmail.com)
+Связаться со мной можно по почте [sergey.troschiev@gmail.com](mailto:sergey.troschiev@gmail.com) и через телеграм: https://t.me/sergey_doc
