@@ -23,7 +23,7 @@
 <tr>
     <td><a href=
 "https://github.com/troschiev/Face_Recognition_Pipeline"
->Full face recognition pipeline</a></td>
+>Full face recognition pipeline (eng)</a></td>
     <td>Face detection (YOLO), face landmarks coordinates regression, face alignment, face embedding DNN, cos similarity analysis, telegram bot implementation</td>
     <td>python, pytorch, albumentations, timm, aiogram, cv2</td>
   </tr>
