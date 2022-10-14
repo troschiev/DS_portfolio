@@ -1,36 +1,38 @@
-# Внимание!
+# Attention!
 
-В настоящем ноутбуке активно используется библиотека plotly, поэтому графики не отображаются на GitHub. Прошу смотреть по [ссылке](https://nbviewer.org/github/troschiev/DS_portfolio/blob/main/Video_Games_Market_Analysis/Video_Games_Market_Analysis.ipynb).
+This notebook uses the plotly library, so plots don't show up on GitHub. Please see the [link](https://nbviewer.org/github/troschiev/DS_portfolio/blob/main/Video_Games_Market_Analysis/Video_Games_Market_Analysis.ipynb).
 
-# Анализ рынка видеоигр
+# Video Game Market Analysis
 
-## Описание
+## Description
 
-Проект посвящен исследовательскому анализу рынка видеоигр, необходимому для прогнозирования спроса в игровом магазине.
-Задача - анализ данных (без машинного обучения).
+The project is dedicated to the analysis of the video game market, which is necessary to forecast the demand in the game store.
 
-## Инструменты
+## Stack
 
-Загрузка, хранение и обработка данных: pandas, numpy
+Loading, storing and processing data: pandas, numpy
 
-Проверка гипотез: scipy
+Hypothesis testing: scipy
 
-Визуализация: seaborn, plotly
+Visualization: seaborn, plotly
 
-Индивидуальные решения:
-- использование доменных знаний
-- глубокая предобработка
-- большое количество визуализаций с различными "срезами" данных
-- интерактивные визуализации
+Individual solutions:
 
-## Данные
+- use of domain knowledge
+- deep preprocessing
+- a large number of visualizations with different "slices" of data
+- interactive visualizations
 
-Использован датасет Я.Практикума:
-- 16 000 записей
-- категориальные и количественные признаки
-- есть пропуски и выбросы
+## Data
 
-## Выводы
-- проведен глубокий анализ данных
-- определены наиболее перспективные платформы и серии игр на момент формирования датасета
-- показано, что японский рынок сильно отличается от рынков других регионов
+The dataset of Yandex Practicum:
+
+- 16,000 entries
+- categorical and quantitative features
+- there are missing values and outliers
+
+## Conclusions
+
+- in-depth data analysis was carried out
+- the most promising platforms and game series were determined
+- it is shown that the Japanese market is very different from the markets of other regions
