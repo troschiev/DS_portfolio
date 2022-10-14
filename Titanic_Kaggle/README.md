@@ -19,6 +19,7 @@ Automation: optuna
 Models: catboost
 
 Individual solutions:
+
 - comprehensive data analysis with advanced visualizations
 - manual feature selection
 

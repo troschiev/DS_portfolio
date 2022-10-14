@@ -26,7 +26,7 @@ Individual solutions:
 
 ## Data
 
-Real data from the gold mining industry, provided by Yandex Practicum:
+Real raw data from the gold mining industry, provided by Yandex Practicum:
 
 - 20,000 entries
 - 86 numeric features

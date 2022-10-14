@@ -20,14 +20,14 @@ Models: sklearn (LR, RF, KNN, SVM, NB, Tree), XGBoost
 
 Individual solutions:
 
-- feature engineering, which greatly inreased linear model quality
+- feature engineering, which greatly increased linear model quality
 - study of the influence of model hyperparameters on the quality metric
 - determination of features importances L1 regularization
 - models blending
 
 ## Data
 
-The dataset of Yandex Practicum was used:
+The dataset of Yandex Practicum:
 
 - 3000+ entries
 - numerical features

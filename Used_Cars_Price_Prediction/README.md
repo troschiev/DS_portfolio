@@ -19,6 +19,7 @@ Automation: sklearn, category_encoders, optuna
 Models: sklearn linear regression, LightGBM, XGBoost, catboost, pytorch (dense)
 
 Individual solutions:
+
 - data preprocessing and cleaning using domain knowledge
 - active use of various ways of encoding categorical variables, in particular, target encoding and its variations. Choice of coding based on the result of cross-validation
 - measured the training and inference time of all models, as well as the time of hyperparameters tuning
