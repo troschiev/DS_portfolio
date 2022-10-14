@@ -1,38 +1,42 @@
-# Отток клиентов банка
+# Bank Customer Churn
 
-## Описание
+## Description
 
-Проект посвящен выявлению клиентов банка, склонных к уходу в другую организацию. 
-Задача - классификация. 
-Целевая метрика - F1.
+The project is dedicated to identifying bank customers who are inclined to leave for another organization.
 
-## Инструменты
+The task is classification.
 
-Загрузка, хранение и обработка данных: pandas, numpy
+Target metric - F1.
 
-Визуализация: seaborn, t-SNE, matplotlib
+## Stack
 
-Автоматизация: sklearn pipeline, подбор гиперпараметров optuna
+Loading, storing and processing data: pandas, numpy
 
-Модели: sklearn, XGBoost, LightGBM
+Visualization: seaborn, t-SNE, matplotlib
 
-Индивидуальные решения:
-- универсальный класс-обертка для классификатора с настраиваемым порогом
-- определения оптимального порога классификации на кросс-валидации
-- определение важности признаков методом пермутации
-- стекинг моделей
+Automation: sklearn pipeline, selection of optuna hyperparameters
 
-## Данные
+Models: sklearn, XGBoost, LightGBM
 
-Использован [датасет](https://www.kaggle.com/datasets/barelydedicated/bank-customer-churn-modeling):
-- 10 000 записей
-- количественные и категориальные признаки
-- есть пропуски
-- нет выбросов
+Individual solutions:
 
-## Выводы
+- a universal wrapper class for a classifier with a custom threshold
+- determination of the optimal classification threshold by cross-validation
+- determination of the feature importances by permutations
+- blending models
 
-- выполнена визуализация t-SNE, показавшая, что у задачи нет тривиальных решений и необходимо использовать модели машинного обучения
-- обучено 9 моделей, из них выбраны 3 лучшие и сделан стекинг
-- лучший результат получен с использованием градиентного бустинга XGBoost
-- лучшим методом борьбы с дисбалансом классов стала одновременная балансировка весами и подбор порога классификации
+## Data
+
+Used [dataset](https://www.kaggle.com/datasets/barelydedicated/bank-customer-churn-modeling):
+
+- 10,000 entries
+- numerical and categorical features
+- there are missing values
+- no outliers
+
+## Conclusions
+
+- t-SNE visualization was performed, showing that the problem has no trivial solutions and it is necessary to use machine learning models
+- 9 models trained, 3 best selected and blended
+- best result obtained using XGBoost
+- the best method of dealing with class imbalance was the simultaneous balancing of weights and the selection of the classification threshold

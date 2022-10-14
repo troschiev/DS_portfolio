@@ -1,34 +1,37 @@
-# Определение стоимости автомобилей
+# Used Car Price Prediction
 
-## Описание
+## Description
 
-Проект посвящен предсказанию стоимости БУ автомобиля по его характеристикам, указанным владельцем.
-Задача - регрессия. 
-Целевая метрика - RMSE.
+The project is dedicated to predicting the price of a used car according to its characteristics specified by the owner.
 
-## Инструменты
+The task is regression.
 
-Загрузка, хранение и обработка данных: pandas, numpy, phik
+Target metric - RMSE.
 
-Визуализация: seaborn, matplotlib
+## Stack
 
-Автоматизация: sklearn, category_encoders, optuna
+Loading, storing and processing data: pandas, numpy, phik
 
-Модели: sklearn linear regression, LightGBM, XGBoost, catboost, pytorch (dense)
+Visualization: seaborn, matplotlib
 
-Индивидуальные решения:
-- предобработка и очистка данных с использованием доменных знаний
-- активное использование различных способов кодирования категориальных перменных, в частности, target encoding и его вариации. Выбор кодирования по результату на кросс-валидации
-- измерено время обучения и инференса всех моделей, а также время подбора гиперпараметров
+Automation: sklearn, category_encoders, optuna
 
-## Данные
+Models: sklearn linear regression, LightGBM, XGBoost, catboost, pytorch (dense)
 
-Использован датасет Я.Практикума:
-- 350 000 записей
-- категориальные и количественные признаки
-- есть пропуски и выбросы (много)
+Individual solutions:
+- data preprocessing and cleaning using domain knowledge
+- active use of various ways of encoding categorical variables, in particular, target encoding and its variations. Choice of coding based on the result of cross-validation
+- measured the training and inference time of all models, as well as the time of hyperparameters tuning
 
-## Выводы
-- показано, что кодирование категориальных переменных позволяет значительно повысить целевую метрику
-- лучший результат получен с использованием LightGBM с подбором гиперпараметров в optuna
-- анализ остатков показал, что большинство ошибок модели связаны с некорректно заполненной информацией об автомобилях
+## Data
+
+The dataset of Yandex Practicum:
+
+- 350,000 entries
+- categorical and quantitative features
+- there are missing values and outliers (many)
+
+## Conclusions
+- it is shown that coding of categorical variables can significantly increase the target metric
+- best result obtained using LightGBM with hyperparameter tuning in optuna
+- analysis of the residuals showed that most model errors are associated with incorrect information about cars

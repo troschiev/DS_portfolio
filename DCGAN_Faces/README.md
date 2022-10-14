@@ -1,61 +1,62 @@
-# DCGAN для генерации лиц
+# DCGAN for face generation
 
-## Описание
+## Description
 
-Проект посвящен ручной реализации и обучению архитектуры на основе DCGAN. 
+The project is dedicated to the manual implementation and training of architecture based on DCGAN.
 
-Задача - генерация более-менее фотореалистичных изображений.
+The task is to generate more or less photorealistic images.
 
-## Инструменты
+## Stack
 
-Загрузка, хранение и обработка данных: pytorch dataset/dataloader (тензоры), numpy (матрицы)
+Loading, storing and processing data: pytorch dataset/dataloader (tensors), numpy (matrices)
 
-Визуализация: matplotlib, TSNE
+Visualization: matplotlib, TSNE
 
-Автоматизация: torchvision, sklearn, albumentations
+Automation: torchvision, sklearn, albumentations
 
-Модели: pytorch - вручную созданы архитектуры дискриминатора и генератора
+Models: pytorch - manually created discriminator and generator architectures
 
-Индивидуальные решения:
-- подбор количественных параметров сетей и гиперпараметров обучения
-- реализация слоев гауссовского шума для нейронных сетей
+Individual solutions:
+
+- selection of networks architectures and training hyperparameters
+- implementation of Gaussian noise layers for neural networks
 - gradient penalty
-- работа с метками: soft, зашумление, flip
-- визуализация процесса обучения после каждой эпохи, построение итоговых сравнительных графиков
-- метрики качества: Fréchet inception distance и Leave-one-out-1-NN классификация
+- work with labels: soft, noise, flip
+- visualization of the learning process after each epoch, building the final comparative graphs
+- quality metrics: Fréchet inception distance and Leave-one-out-1-NN classification
 
-## Данные
+## Data
 
 - [Flickr-Faces-HQ Dataset](https://github.com/NVlabs/ffhq-dataset)
-- в работе использован ноутбук-заготовка, предоставленный DL school МФТИ. Ноутбук был значительно переработан под мои нужды.
+- a blank ipynb provided by DL school MIPT was used in the work. The ipynb has been significantly redesigned to suit my needs.
 
-## Выводы
+## Conclusions
 
-- реализована классическая архитектура DCGAN для генерации разнообразных изображений лиц людей в разрешении 128х128
+- implemented the classic DCGAN architecture for generating diverse images of people's faces in 128x128 resolution
 
-- реализованы дополнительные трюки для обучения:
-    - переворот меток 0 и 1 при обучении для защиты от затухания градиентов
-    - подмена меток на реальных фотографиях (выдача их за фейки) для защиты от коллапса мод
-    - зашумление меток и soft labels
-    - зашумление картинок
-    - слои гауссовского шума в дискриминаторе и генераторе перед слоями свертки
-    - буфер для сгенерированных изображений
-    - добавлен Gradient Penalty, увеличивающий лосс при "длине" градиентов, отличающейся от единицы
+- implemented additional tricks for training:
+    - reversal of labels 0 and 1 during training
+    - substitution of tags on real photos (passing them off as fakes) to protect against mod collapse
+    - noisy labels and soft labels
+    - image noise
+    - Gaussian noise layers in discriminator and generator before convolution layers
+    - buffer for generated images
+    - added Gradient Penalty, which increases the loss when the "length" of the gradients differs from one
     
-- вручную экспериментально подобраны гиперпараметры обучения, в частности, количество фильтров в генераторе и дискриминаторе и размер батча. Все эти параметры критически важны для скорости обучения и качества работы сети
+- manually experimentally selected training hyperparameters, in particular, the number of filters in the generator and discriminator and the batch size. All these parameters are critical for learning speed and network quality.
 
-- реализованы расчет и отображение метрик:
-    - получение эмбеддингов/латентных векторов изображений предобученной на imagenet сетью
-    - Fréchet inception distance
-    - Leave-one-out-1-NN классификация
-    - t-SNE изображение признаков настоящих и сгенерированных изображений на двумерном графике
+- implemented calculation and display of metrics:
+    - receiving embeddings / latent vectors of images by a network pretrained on imagenet
+    - Frechet inception distance
+    - Leave-one-out-1-NN classification
+    - t-SNE image features of real and generated images on a 2D plot
 
-## Иллюстрации
+## Illustrations
 
-Процесс обучения по эпохам:
+The learning process by epochs:
 
 ![epochs_gif](outputs/_animated_.gif "epochs")
 
-Сгенерированные лица (каждый ряд - плавный переход из одного случайного латентного вектора в другой)
+Generated faces (each row is a smooth transition from one random latent vector to another)
 
 ![vary](outputs/vary_latent.png)

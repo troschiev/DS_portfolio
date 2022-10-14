@@ -1,43 +1,47 @@
-# Прогнозирование заказов такси
+# Taxi Demand Time Series
 
-## Описание
+## Description
 
-Проект посвящен предсказанию временного ряда количества заказов такси.
-Задача - регрессия временного ряда на 1 шаг вперед. 
-Целевая метрика - RMSE.
+The project is dedicated to predicting the taxi orders number time series.
 
-## Инструменты
+The task is to regress the time series 1 step forward.
 
-Загрузка, хранение и обработка данных: pandas, numpy, phik
+Target metric - RMSE.
 
-Работа с временными рядами: statsmodels, pmdarima, prophet
+## Stack
 
-Визуализация: seaborn, matplotlib, встроенные методы библиотек для обработки временных рядов
+Loading, storing and processing data: pandas, numpy, phik
 
-Автоматизация: sklearn, category_encoders
+Working with time series: statsmodels, pmdarima, prophet
 
-Универсальные модели: sklearn linear regression, LightGBM, pytorch (архитектуры: dense, LSTM), lineartree
+Visualization: seaborn, matplotlib, built-in library methods for time series processing
 
-Индивидуальные решения:
-- автоматизированный инжиниринг и подбор признаков для классических моделей машинного обучения
-- на моделях, способных прогнозировать на много шагов вперед, получен прогноз на всю тестовую выборку
-- использована модель гибридного бустинга, сочетающая в себе достоинства линейных моделей (устойчивость) и градиентных бустингов
+Automation: sklearn, category_encoders
 
-## Данные
+Generic models: sklearn linear regression, LightGBM, pytorch (architectures: dense, LSTM), lineartree
 
-Использован датасет Я.Практикума:
-- 26000 записей временного ряда с указанием дат
-- нет пропусков и выбросов
+Individual solutions:
 
-## Выводы
+- automated feature engineering and selection for classical ML models
+- a forecast was obtained for the entire test sample with models capable of predicting many steps ahead 
+- a hybrid boosting model was used, which combines the advantages of linear models (stability) and gradient boosting
 
-- обучены все основные модели, применяемые для прогнозирования временных рядов, включая:
-  - экспоненциальное сглаживание
-  - линейная регрессия по лагам
-  - градиентный бустинг по отобранным признакам
+## Data
+
+The dataset of Yandex Practicum:
+
+- 26,000 time series records with dates
+- no missing values and outliers
+
+## Conclusions
+
+- trained all the main models used for forecasting time series, including:
+  - exponential smoothing
+  - linear regression on lagged features
+  - gradient boosting on selected features
   - SARIMA
-  - Prophet (готовая библиотека для работы с временными рядами)
-  - полносвязная нейронная сеть
+  - Prophet (ready-made library for working with time series)
+  - fully connected neural network
   - LSTM
-- показано, что модели, специально разработанные для временных рядов, такие как экспоненциальное сглаживание и SARIMA, обеспечивают лучший результат
-- в то же время, линейная регрессия с большим количеством лаговых переменных также обеспечивает хороший результат при предсказании на 1 шаг вперед
+- it is shown that models specifically designed for time series, such as exponential smoothing and SARIMA, provide the best result
+- at the same time, linear regression with a large number of lag variables also provides a great result when predicting 1 step ahead

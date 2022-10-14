@@ -1,34 +1,38 @@
-# Идентификация токсичных комментариев
+# Toxic Comment Classification
 
-## Описание
+## Description
 
-Проект посвящен созданию модели, определяющей токсичные комментарии к правкам википедии. 
-Задача - классификация. 
-Целевая метрика - F1.
+The project is dedicated to creating a model that defines toxic comments on Wikipedia edits.
 
-## Инструменты
+The task is classification.
 
-Загрузка, хранение и обработка данных: pandas, pytorch dataset/dataloader, numpy
+Target metric - F1.
 
-Визуализация: seaborn, matplotlib, wordcloud
+## Stack
 
-Автоматизация: sklearn pipeline, optuna
+Loading, storing and processing data: pandas, pytorch dataset/dataloader, numpy
 
-Модели: sklearn logistic regression & naive Bayes, catboost, BERT (Hugging Face)
+Visualization: seaborn, matplotlib, wordcloud
 
-Работа с текстом: nltk, enchant, spacy, gensim
+Automation: sklearn pipeline, optuna
 
-Индивидуальные решения:
-- "мягкая" очистка текста для работы BERT
-- борьба с дисбалансом: веса классов в функции потерь, подстройка порога классификации на валидационной выборке
+Models: sklearn logistic regression & naive Bayes, catboost, BERT (Hugging Face)
 
-## Данные
+Text processing: nltk, enchant, spacy, gensim
 
-Использован датасет Я.Практикума:
-- 160 000 размеченных записей на английском языке
-- дисбаланс классов 9 к 1
+Individual solutions:
 
-## Выводы
+- "soft" text cleaning for BERT operation
+- class imbalance: class weights in the loss function, adjustment of the classification threshold on the validation set
 
-- лучший результат с большим отрывом у fine-tuned BERT классификатора, обученного в течение всего лишь 2 эпох с малым LR
-- второй результат - у логистической регрессии на TF-IDF признаках после лемматизации текста
+## Data
+
+The dataset of Yandex Practicum:
+
+- 160,000 tagged entries in English
+- class imbalance 9 to 1
+
+## Conclusions
+
+- best result by fine-tuned BERT classifier trained for only 2 epochs with low LR
+- second result - for logistic regression on TF-IDF features after text lemmatization

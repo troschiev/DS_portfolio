@@ -1,35 +1,38 @@
-# Определение возраста человека по фотографии
+# Person Age by Photo
 
-## Описание
+## Description
 
-Проект посвящен определению возраста человека по фотографии. 
-Задача - регрессия. 
-Целевая метрика - MAE.
+The project is dedicated to determining the age of a person from a photograph.
 
-## Инструменты
+The task is regression.
 
-Загрузка, хранение и обработка данных: pytorch dataset/dataloader (тензоры), numpy (матрицы), cv2 (изображения)
+Target metric - MAE.
 
-Визуализация: matplotlib
+## Stack
 
-Автоматизация: albumentations
+Loading, storing and processing data: pytorch dataset/dataloader (tensors), numpy (matrices), cv2 (images)
 
-Модели: pytorch, timm - предобученная EfficientNet V2
+Visualization: matplotlib
 
-Альтернативное решение: ResNet50 в keras
+Automation: albumentations
 
-Индивидуальные решения:
-- подбор оптимальных аугментаций
-- визуализация процесса обучения после каждой эпохи, построение итоговых сравнительных графиков
-- функция индивидуального инференса для пользовательских фотографий
+Models: pytorch, timm - pretrained EfficientNet V2
 
-## Данные
+Alternative solution: ResNet50 in keras
 
-Использован датасет [ChaLearn Looking at People](https://chalearnlap.cvc.uab.cat/dataset/26/description/):
-- более 6000 цветных фотографий лиц людей с метками реального возраста
+Individual solutions:
 
-## Выводы
+- selection of optimal augmentations
+- visualization of the learning process after each epoch, plotting the final comparative graphs
 
-- подобрана комбинация сильных аугментаций
-- обучена модель
-- сделан анализ остатков, показано, что по большей части модель ошибается на некачественных фотографиях
+## Data
+
+The [ChaLearn Looking at People](https://chalearnlap.cvc.uab.cat/dataset/26/description/) dataset:
+
+- more than 6000 color photographs of people's faces with real age tags
+
+## Conclusions
+
+- selected combination of strong augmentations
+- trained model
+- the analysis of the model errors is done, it is shown that for the most part the model is mistaken on low-quality photographs

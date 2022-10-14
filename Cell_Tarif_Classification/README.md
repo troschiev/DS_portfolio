@@ -1,36 +1,40 @@
-# Рекомендация тарифа клиенту мобильного оператора
+# Tariff Recommendation for a Mobile Operator Client
 
-## Описание
+## Description
 
-Проект посвящен классификации пользователей мобильного оператора на основе данных об их активности. 
-Задача - классификация. 
-Целевая метрика - accuracy.
+The project is dedicated to the classification of mobile operator users based on their activity.
 
-## Инструменты
+The task is classification.
 
-Загрузка, хранение и обработка данных: pandas, numpy
+The target metric is accuracy.
 
-Визуализация: seaborn, matplotlib
+## Tools
 
-Автоматизация: sklearn
+Loading, storing and processing data: pandas, numpy
 
-Модели: sklearn (LR, RF, KNN, SVM, NB, Tree), XGBoost
+Visualization: seaborn, matplotlib
 
-Индивидуальные решения:
-- инжиниринг признаков, позволивший линейной приблизиться к бустингам по качеству
-- исследование влияния гиперпараметров моделей на метрику качества
-- определение важности признаков методом отбора регуляризатором L1
-- стекинг моделей
+Automation: sklearn
 
-## Данные
+Models: sklearn (LR, RF, KNN, SVM, NB, Tree), XGBoost
 
-Использован датасет Я.Практикума:
-- 3000+ записей
-- количественные признаки
-- нет пропусков и выбросов
+Individual solutions:
 
-## Выводы
+- feature engineering, which greatly inreased linear model quality
+- study of the influence of model hyperparameters on the quality metric
+- determination of features importances L1 regularization
+- models blending
 
-- обучено 10 моделей, на их основе построен стекинг с взвешенным soft-voting
-- гиперпараметры моделей подобраны с использованием кросс-валидации
-- лучший результат получен с использованием стекинга
+## Data
+
+The dataset of Yandex Practicum was used:
+
+- 3000+ entries
+- numerical features
+- no missing values and outliers
+
+## Conclusions
+
+- 10 models were trained and blended
+- model hyperparameters were selected using cross-validation
+- the best result was obtained using blending

@@ -1,42 +1,43 @@
-# Автоэнкодеры изображений
+# Image Autoencoders
 
-## Описание
+## Description
 
-Проект посвящен реализации основных идей автоэнкодеров изображений. 
+The project is dedicated to the implementation of the main ideas of image autoencoders.
 
-Задача - модификация изображений, поиск подобных изображений, генерация изображений.
+The task is to modify images, search for similar images, and generate images.
 
-## Инструменты
+## Stack
 
-Загрузка, хранение и обработка данных: pytorch dataset/dataloader (тензоры), numpy (матрицы)
+Loading, storing and processing data: pytorch dataset/dataloader (tensors), numpy (matrices)
 
-Визуализация: matplotlib, TSNE
+Visualization: matplotlib, TSNE
 
-Автоматизация: torchvision, sklearn
+Automation: torchvision, sklearn
 
-Модели: pytorch - вручную созданы архитектуры, подобные ResNet
+Models: pytorch - manually created ResNet-like architectures
 
-Индивидуальные решения:
-- создание многослойных сверточных моделей, включающих в себя энкодер и декодер
-- ручная реализация функций потерь
-- визуализация процесса обучения после каждой эпохи, построение итоговых сравнительных графиков
+Individual solutions:
 
-## Данные
+- creation of multilayer convolutional models, including encoder and decoder
+- manual implementation of loss functions
+- visualization of the learning process after each epoch, plotting the final comparative graphs
+
+## Data
 
 - [Labeled Faces in the Wild Home](http://vis-www.cs.umass.edu/lfw/)
 - MNIST
-- в работе использован ноутбук-заготовка, предоставленный DL school МФТИ. Ноутбук был значительно переработан под мои нужды.
+- a blank ipynb provided by DL school MIPT was used in the work. The ipynb has been significantly redesigned to suit my needs.
 
-## Выводы
+## Conclusions
 
-Реализованы:
-- обычный автоэнкодер на лицах
-    - сэмплинг случайных векторов из латентного пространства
-    - определение векторов "фич" лиц, например, улыбок
-    - модификация фич на фотографиях
-    - Image Retrieval - поиск лиц в датасете, похожих на какое-то одно лицо
-- вариационный автоэнкодер на MNIST
+Implemented:
+- regular autoencoder on faces
+    - sampling of random vectors from latent space
+    - definition of vectors of "features" of faces, for example, smiles
+    - modification of features in photos
+    - Image Retrieval - search for faces in the dataset that look like a certain face
+- variational autoencoder on MNIST
     - denoising
-    - лосс как сумма BCELoss и KL divergence
-    - сэмплинг случайных векторов из латентного пространства
-    - модификация: conditional VAE
+    - loss as the sum of BCELoss and KL divergence
+    - sampling of random vectors from latent space
+    - modification: conditional VAE

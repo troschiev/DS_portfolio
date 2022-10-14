@@ -1,34 +1,38 @@
-# Классификация изображений Симпсонов
+# Simpsons Classification
 
-## Описание
+## Description
 
-Проект посвящен идентификации персонажей сериала Симпсоны по изображениям. 
-Задача - многоклассовая классификация. 
-Целевая метрика - F1.
+The project is dedicated to the identification of The Simpsons characters on images.
 
-## Инструменты
+The task is multiclass classification.
 
-Загрузка, хранение и обработка данных: pytorch dataset/dataloader (тензоры), numpy (матрицы), PIL (изображения)
+Target metric - F1.
 
-Визуализация: matplotlib
+## Stack
 
-Автоматизация: torchvision 
+Loading, storing and processing data: pytorch dataset/dataloader (tensors), numpy (matrices), PIL (images)
 
-Модели: pytorch - ResNeXt50
+Visualization: matplotlib
 
-Индивидуальные решения:
-- подбор оптимальных аугментаций
-- борьба с сильным дисбалансом классов путем добавления весов в функцию потерь
-- разморозка слоев сети по мере тюнинга
+Automation: torchvision
 
-## Данные
+Models: pytorch - ResNeXt50
 
-Использован датасет соревнования [Journey to Springfield](https://www.kaggle.com/competitions/journey-springfield):
-- около 20000 цветных изображений с метками классов
-- сильный дисбаланс классов (самый редкий класс примерно в 1000 раз реже самого частого)
-- в работе использован ноутбук-заготовка, предоставленный DL school МФТИ. Ноутбук был значительно переработан под мои нужды
+Individual solutions:
 
-## Выводы
+- selection of optimal augmentations
+- adding weights to the loss function to compensate for strong class imbalance
+- unfreezing network layers as you tune
 
-- на основе предобученной сети ResNeXt50 создан и обучен классификатор
-- метрика на тестовой выборке 0.984
+## Data
+
+The dataset of the [Journey to Springfield competition](https://www.kaggle.com/competitions/journey-springfield):
+
+- about 20000 color images with class labels
+- strong imbalance of classes (the rarest class is about 1000 times rarer than the most frequent)
+- a blank ipynb provided by DL school MIPT was used in the work. The ipynb has been significantly redesigned to suit my needs.
+
+## Conclusions
+
+- based on the pre-trained ResNeXt50 network, a classifier was created and trained
+- quality on the test sample was 0.984

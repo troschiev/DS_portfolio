@@ -1,36 +1,40 @@
-# Восстановление золота из руды
+# Gold Recovery Efficiency Model
 
-## Описание
+## Description
 
-Проект посвящен анализу технологии очистки золотой руды. 
-Задача - регрессия. 
-Целевая метрика - sMAPE.
+The project is dedicated to the analysis of gold ore purification technology.
 
-## Инструменты
+The task is regression.
 
-Загрузка, хранение и обработка данных: pandas, numpy, phik
+The target metric is sMAPE.
 
-Визуализация: seaborn
+## Stack
 
-Автоматизация: sklearn pipeline, подбор гиперпараметров optuna
+Loading, storing and processing data: pandas, numpy, phik
 
-Модели: sklearn, XGBoost
+Visualization: seaborn
 
-Индивидуальные решения:
-- мягкая очистка от выбросов
-- поиск наборов коррелирующих признаков и их объединение методом главных компонент
-- создание собственного класса для кросс-валидации с различной преобработкой обучающей и валидационной частей
+Automation: sklearn pipeline, selection of optuna hyperparameters
 
-## Данные
+Models: sklearn, XGBoost
 
-Реальные данные с золотодобывающего производства, предоставленные Я.Практикумом:
-- 20 000 записей
-- 86 количественных признаков
-- много пропусков и выбросов
-- распределения признаков в тестовой выборке отличаются от обучающей
+Individual solutions:
 
-## Выводы
+- soft cleaning of outliers
+- search for sets of correlated features and their combination by PCA
+- creating own class for cross-validation with different processing of the training and validation samples
 
-- проведен глубокий анализ признаков с многочисленными визуализациями
-- лучший результат регрессии получен с использованием XGBoost после снижения размерности пространства признаков
-- получен бесценный опыт работы с "сырыми" данными, которые требуют тщательной предобработки
+## Data
+
+Real data from the gold mining industry, provided by Yandex Practicum:
+
+- 20,000 entries
+- 86 numeric features
+- many missing values and outliers
+- the distribution of features in the test sample differs from the training one
+
+## Conclusions
+
+- in-depth feature analysis with multiple visualizations
+- best regression result obtained using XGBoost after feature space dimensionality reduction
+- gained invaluable experience working with "raw" data that require careful pre-processing

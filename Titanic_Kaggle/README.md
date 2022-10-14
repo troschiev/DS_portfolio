@@ -1,34 +1,36 @@
-# Выжившие на Титанике
+# Titanic Analysis
 
-## Описание
+## Description
 
-Проект является моим вариантом решения задачи по предсказанию выживания пассажиров Титаника. 
-Задача - классификация.
-Целевая метрика - accuracy.
+The project is my solution to the problem of predicting the survival of the passengers of the Titanic.
 
-## Инструменты
+The task is classification.
 
-Загрузка, хранение и обработка данных: pandas, numpy
+The target metric is accuracy.
 
-Визуализация: seaborn, matplotlib
+## Stack
 
-Автоматизация: optuna
+Loading, storing and processing data: pandas, numpy
 
-Модели: catboost
+Visualization: seaborn, matplotlib
 
-Индивидуальные решения:
-- исчерпывающий анализ данных с продвинутыми визуализациями
-- определение важных и неважных параметров
+Automation: optuna
 
-## Данные
+Models: catboost
 
-Использован датасет [Titanic - Machine Learning from Disaster](https://www.kaggle.com/code/sergeytroschiev/titanic-large-eda-catboost-optuna).:
-- 891 запись в обучающей выборке
-- качественные и количественные признаки
-- есть пропуски
+Individual solutions:
+- comprehensive data analysis with advanced visualizations
+- manual feature selection
 
-## Выводы
+## Data
 
-- в результате анализа отобраны наиболее перспективные признаки
-- полезность признаков проведена с использованием кросс-валидации
-- работа выполнена на английском языке и [размещена на Kaggle](https://www.kaggle.com/code/sergeytroschiev/titanic-large-eda-catboost-optuna), где получила теплый прием
+Dataset [Titanic - Machine Learning from Disaster](https://www.kaggle.com/code/sergeytroschiev/titanic-large-eda-catboost-optuna):
+
+- 891 records
+- categorical and numerical features
+- there are missing values
+
+## Conclusions
+
+- the most promising features were selected as a result of the analysis
+- the work was [hosted on Kaggle] (https://www.kaggle.com/code/sergeytroschiev/titanic-large-eda-catboost-optuna)

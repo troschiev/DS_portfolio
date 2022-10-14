@@ -1,38 +1,41 @@
-# Внимание!
+# Attention!
 
-В ноутбуке много визуализаций, поэтому он не всегда открывается на GitHub. Прошу смотреть по [ссылке](https://nbviewer.org/github/troschiev/DS_portfolio/blob/main/Semantic_Segmentation_Skin_Lesions/Semantic_Segmentation_Skin_Lesions.ipynb).
+Notebook has a lot of visualizations so it doesn't always open on GitHub. Please see [link](https://nbviewer.org/github/troschiev/DS_portfolio/blob/main/Semantic_Segmentation_Skin_Lesions/Semantic_Segmentation_Skin_Lesions.ipynb).
 
-# Сегментация изображений дефектов кожи
+# Semantic Segmentation of Skin Lesions
 
-## Описание
+## Description
 
-Проект посвящен семантической сегментации изображений дефектов кожи на микро-фотографиях. 
-Задача - классификация (попиксельная). 
-Целевая метрика - IoU (Jaccard index).
+The project is dedicated to the semantic segmentation of images of skin defects in micro-photographs.
 
-## Инструменты
+The task is classification (per pixel).
 
-Загрузка, хранение и обработка данных: pytorch dataset/dataloader (тензоры), numpy (матрицы), cv2 (изображения)
+Target metric - IoU (Jaccard index).
 
-Визуализация: matplotlib
+## Stack
 
-Автоматизация: albumentations
+Loading, storing and processing data: pytorch dataset/dataloader (tensors), numpy (matrices), cv2 (images)
 
-Модели: pytorch - вручную созданы архитектуры типа SegNet (на основе предобученной VGG16) и Unet
+Visualization: matplotlib
 
-Индивидуальные решения:
-- подбор оптимальных аугментаций
-- ручная реализация функций потерь, в частности, специфичных для задач сегментации изображений
-- визуализация процесса обучения после каждой эпохи, построение итоговых сравнительных графиков
+Automation: albumentations
 
-## Данные
+Models: pytorch - manually created architectures like SegNet (based on pre-trained VGG16) and Unet
 
-Использован датасет [ADDI project](https://www.fc.up.pt/addi/ph2%20database.html):
-- 200 цветных семантически размеченных изображений
-- в работе использован ноутбук-заготовка, предоставленный DL school МФТИ. Ноутбук был значительно переработан под мои нужды.
+Individual solutions:
 
-## Выводы
+- selection of optimal augmentations
+- manual implementation of loss functions, specific to image segmentation tasks
+- visualization of the learning process after each epoch, plotting the final comparative graphs
 
-- обучены 15 моделей (3 архитектуры, 5 функций потерь), результаты представлены в виде наглядных графиков. Все модели были обучены до сходимости
-- сделаны выводы о применимости использованных архитектур и функций потерь для решаемой задачи
-- по итогам обучения написан развернутый отчет
+## Data
+
+The [ADDI project](https://www.fc.up.pt/addi/ph2%20database.html) dataset:
+
+- 200 color semantically marked images
+- a blank ipynb provided by DL school MIPT was used in the work. The ipynb has been significantly redesigned to suit my needs.
+
+## Conclusions
+
+- 15 models were trained (3 architectures, 5 loss functions), the results are presented in the form of visual graphs. All models were trained to convergence
+- a detailed report on the results of the training was written 
